@@ -9,5 +9,5 @@ bin/setup
 rails server
 ```
 ```bash
-localhos:3000
+localhost:3000
 ```
