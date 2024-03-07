@@ -1,0 +1,33 @@
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">EMPLOYEES</th>
+    </tr>
+     <tr>
+      <th colspan="10"><hr></th>
+    </tr>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Address</th>
+      <th>Country</th>
+      <th>Date of birth</th>
+      <th>Rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6"><hr></td>
+    </tr>
+    <% @employees.each do |employee| %>
+      <tr>
+        <td><%= employee['first_name'] + ' ' + employee['last_name'] %></td>
+        <td><%= employee['email'] %></td>
+        <td><%= employee['address'] %></td>
+        <td><%= employee['country'] %></td>
+        <td><%= employee['date_of_birth'] %></td>
+        <td><%= employee['rating'] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
