@@ -22,7 +22,7 @@ localhost:3000
 If we need fresh data everytime and hence an API call to the ```/employee/list``` endpoint on every request- a thing that can be done is to store the response from the API for the ```access key``` in an instance variable and use its value for the GET request to the ```/employee/list```. It will render the results slightly faster then without it, but slower then if we have database.
 
 
-To check the Solution Two go to:
+To check the Solution Two restart the server and go to:
 ```bash
 localhost:3000/employees_alt
 ```
