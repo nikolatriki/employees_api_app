@@ -9,7 +9,7 @@ bin/setup
 rails server
 ```
 ### Solution One
-Since the task asks *"to consume data from API. You should store it and provide output as a list of employees"*, I've taken the approach of retrieving this data and store it in a table. Calls to a local database are way faster than calls to external APIs.
+Since the task asks *"to consume data from API. You should store it and provide output as a list of employees"*, I've taken the approach of retrieving this data and store it in a table. Calls to a local database are way faster than calls to external APIs. We still update the database by making an API call once the cache expires (I set it arbitrary to 2 hours) or restart the server.
 
 This is my preffered approach, but I have questions for which the answers may render it unacceptable: Do we need real-time or is a cached version okay? How often do we need that data and how often is is updated?
 
