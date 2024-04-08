@@ -38,11 +38,11 @@ module EmployeeApiAlt
 
   def self.user_load
     {
-      grant_type: "password",
-      client_id: "6779ef20e75817b79605",
-      client_secret: "3e0f85f44b9ffbc87e90acf40d482602",
-      username: "hiring",
-      password: "tmtg"
+      grant_type: ENV['GRANT_TYPE'],
+      client_id: ENV['CLIENT_ID'],
+      client_secret: ENV['CLIENT_SECRET'],
+      username: ENV['USER_NAME'],
+      password: ENV['PASSWORD']
     }.to_json
   end
 
